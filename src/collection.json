@@ -1,9 +1,14 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "custom-angular-schematics": {
-      "description": "A blank schematic.",
-      "factory": "./custom-angular-schematics/index#customAngularSchematics"
+    "component": {
+      "description": "A schematic for component generation",
+      "factory": "./component/index#component"
+    },
+    "workspace": {
+      "description": "A schematic for workspace generation",
+      "factory": "./workspace/index#workspace"
+
     }
   }
 }

@@ -4,11 +4,11 @@ import * as path from 'path';
 
 const collectionPath = path.join(__dirname, '../collection.json');
 
-describe('custom-angular-schematics', () => {
+describe('component', () => {
   it('works', async () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
     const tree = await runner
-      .runSchematicAsync('custom-angular-schematics', {}, Tree.empty())
+      .runSchematicAsync('component', {}, Tree.empty())
       .toPromise();
 
     expect(tree.files).toEqual([]);
