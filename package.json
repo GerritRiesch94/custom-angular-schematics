@@ -4,7 +4,8 @@
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "jest"
+    "test": "jest",
+    "localtest:component": "schematics .:component"
   },
   "keywords": [
     "schematics"
@@ -15,6 +16,7 @@
   "dependencies": {
     "@angular-devkit/core": "^13.1.2",
     "@angular-devkit/schematics": "^13.1.2",
+    "@schematics/angular": "^13.1.2",
     "typescript": "~4.5.2"
   },
   "devDependencies": {
